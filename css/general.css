@@ -37,6 +37,7 @@ Paragraph deafult 1.15
 
 --- 06 Border-Radius
 Deafult: 9px
+12px
 --- 07 Whitespace
 
 */
@@ -67,13 +68,34 @@ a:visited {
   text-decoration: none;
 }
 
+strong {
+  font-weight: 500;
+}
+
+.link:link,
+.link:visited {
+  color: #e67e22;
+  display: inline-block;
+  font-size: 2rem;
+  padding-bottom: 2px;
+  border-bottom: 1px currentColor solid;
+  transition: all 0.3s;
+}
+
+.link:active,
+.link:hover {
+  color: #cf711f;
+  border-bottom: 1px transparent solid;
+}
+
 .btn:link,
 .btn:visited {
   display: inline-block;
   padding: 1.2rem 2.4rem;
   /* margin: 0 1rem; */
   border-radius: 9px;
-  transition: background-color 0.2s;
+  /* transition: background-color 0.2s; */
+  transition: all 0.2s;
 }
 
 .btn--full:link,
@@ -138,9 +160,21 @@ a:visited {
   letter-spacing: 3px;
 }
 
+/* Helper/Settings Classes */
+
+.center-text {
+  text-align: center;
+}
+
 .margin-right-sm {
   margin-right: 1.6rem !important;
 }
+
+.margin-bottom-sd {
+  margin-bottom: 4.8rem !important;
+}
+
+/* Grid template classes */
 
 .grid {
   display: grid;
