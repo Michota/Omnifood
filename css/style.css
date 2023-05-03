@@ -105,6 +105,10 @@ a:visited {
   margin-bottom: 3.2rem;
 }
 
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
 /* ************* Header ************* */
 
 .header {
@@ -175,10 +179,6 @@ a:visited {
   margin-bottom: 4.8rem;
 }
 
-.margin-right-sm {
-  margin-right: 1.6rem !important;
-}
-
 .delivered-meals {
   margin-top: 8rem;
   display: flex;
@@ -210,4 +210,41 @@ a:visited {
 .delivered-highlight {
   color: #cf711f;
   font-weight: 700;
+}
+
+/* ************* How it works Section ************* */
+
+.section-how {
+  padding: 9.6rem 0;
+  background-color: red;
+}
+
+.section-how div div {
+  padding: 100px;
+  font-size: 50px;
+  background-color: #333;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(3, 1fr);
 }
