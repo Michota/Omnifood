@@ -27,7 +27,11 @@ Paragraph deafult 1.15
 - Tints (darker): 
 #cf711f
 #fae5d3;
-- Shades (lighter): #fdf2e9
+
+- Shades (lighter): 
+#fdf2e9
+#eb984e
+#45260a
 - Accents:
 - Greys: 
 #6f6f6f (lightest gray allowed on #fdf2e9)
@@ -35,6 +39,9 @@ Paragraph deafult 1.15
 #333
 
 --- 05 SHADOWS
+
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.07);
+
 
 --- 06 Border-Radius
 Deafult: 9px
@@ -73,6 +80,11 @@ strong {
   font-weight: 500;
 }
 
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
+
 .link:link,
 .link:visited {
   color: #e67e22;
@@ -89,6 +101,7 @@ strong {
   border-bottom: 1px transparent solid;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -98,14 +111,19 @@ strong {
   border-radius: 9px;
   /* transition: background-color 0.2s; */
   transition: all 0.2s;
+  border: none;
+  /* Only for .btn */
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
 }
 
+.btn,
 .btn--full:link,
 .btn--full:visited {
   font-size: 2rem;
   font-weight: 600;
   background-color: #e67e22;
-  color: #fff;
 }
 
 .btn--full:hover,
