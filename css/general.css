@@ -35,6 +35,7 @@ Paragraph deafult 1.15
 - Accents:
 - Greys: 
 #6f6f6f (lightest gray allowed on #fdf2e9)
+#767676 (lightest gray allowed on #fff/white)
 #555 
 #333
 
@@ -80,9 +81,17 @@ strong {
   font-weight: 500;
 }
 
-*:focus {
+.btn:focus {
   outline: none;
   box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
+
+/* ********* Links and buttons ********** */
+
+.logo-link:active,
+.logo-link:hover {
+  box-shadow: none;
+  border: none;
 }
 
 .link:link,
@@ -213,6 +222,10 @@ strong {
 
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .container {
