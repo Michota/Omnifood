@@ -1,0 +1,92 @@
+/* 
+--- 01 TYPOGRAPHY SYSTEM
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+- FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+*/
+
+/* ren and em do NOT depend on html font-size in media queries!
+Instead, 1 rem = 1em = 16px */
+
+/* ************************************************** */
+/* BELOW 1360px (Smaller desktops) */
+/* ************************************************** */
+
+/* 1366 : 16 ~= 85 */
+@media (max-width: 85em) {
+  .hero {
+    max-width: 120em;
+    /* padding: 0 1rem; */
+  }
+
+  .heading-primary {
+    font-size: 4.4em;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-testimonials {
+    grid-template-columns: 80fr 20fr;
+  }
+}
+
+/* ************************************************** */
+/* BELOW 1200 (Landscape tablets) */
+/* ************************************************** */
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .grid {
+    row-gap: 4.8em;
+    column-gap: 2em;
+  }
+
+  .heading-secondary {
+    font-size: 3.6em;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4em;
+  }
+
+  /* ? */
+  .logos {
+    gap: 0;
+  }
+
+  .heading-featured-in {
+    font-size: 1.2em;
+  }
+
+  .section-testimonials {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .testimonial-container {
+    padding: 2.4em;
+  }
+
+  .testimonial-container .heading-secondary {
+    margin-bottom: 1em;
+  }
+
+  .testimonials {
+    padding-bottom: 2.4em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  /* /? */
+}
