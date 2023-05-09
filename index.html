@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Omnifood is an AI-powered food subscription that will make you eat healthy again, 365 days per year. It's tailored to your personal tastes and nutritional needs."
+    />
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/favicon-512.png" />
+    <link rel="android-touch-icon" href="img/favicon-192.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -15,8 +23,12 @@
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/queries.css" />
-    <script defer src="showMenu.js"></script>
-    <title>Omnifood</title>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="script.js"></script>
+    <title>Omnifood &mdash; Never cook again!</title>
   </head>
   <body>
     <header class="header">
@@ -25,12 +37,14 @@
       </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">How it works</a></li>
-          <li><a class="main-nav-link" href="#">Meals</a></li>
-          <li><a class="main-nav-link" href="#">Testimonials</a></li>
-          <li><a class="main-nav-link" href="#">Pricing</a></li>
+          <li><a class="main-nav-link" href="#how">How it works</a></li>
+          <li><a class="main-nav-link" href="#meals">Meals</a></li>
           <li>
-            <a class="btn btn--full main-nav-link" href="#">Try for free</a>
+            <a class="main-nav-link" href="#testimonials">Testimonials</a>
+          </li>
+          <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+          <li>
+            <a class="btn btn--full main-nav-link" href="#cta">Try for free</a>
           </li>
         </ul>
       </nav>
@@ -51,10 +65,10 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs. <br />
             </p>
-            <a href="#" class="btn btn--full margin-right-sm"
+            <a href="#cta" class="btn btn--full margin-right-sm"
               >Start eating well</a
             >
-            <a href="#" class="btn btn--outline">Learn more &darr;</a>
+            <a href="#how" class="btn btn--outline">Learn more &darr;</a>
             <div class="delivered-meals">
               <div class="delivered-imgs">
                 <img
@@ -132,7 +146,7 @@
       </section>
 
       <!-- How it Works section -->
-      <section class="section-how">
+      <section class="section-how" id="how">
         <div class="container">
           <p class="subheading">How it works</p>
           <h2 class="heading-secondary">
@@ -200,7 +214,7 @@
           </div>
         </div>
       </section>
-      <section class="section-meals">
+      <section class="section-meals" id="meals">
         <div class="container center-text">
           <p class="subheading">Meals</p>
           <h2 class="heading-secondary">
@@ -307,7 +321,7 @@
           <a class="link" href="#">See all recipes &rarr;</a>
         </div>
       </section>
-      <section class="section-testimonials">
+      <section class="section-testimonials" id="testimonials">
         <div class="testimonial-container">
           <div class="container">
             <p class="subheading">Testimonials</p>
@@ -446,7 +460,7 @@
           </figure>
         </div>
       </section>
-      <section class="section-pricing">
+      <section class="section-pricing" id="pricing">
         <div class="container">
           <p class="subheading">Pricing</p>
           <h2 class="heading-secondary">
@@ -568,7 +582,7 @@
           </div>
         </div>
       </section>
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
